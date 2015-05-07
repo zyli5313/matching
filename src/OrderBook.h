@@ -94,6 +94,7 @@ class OrderBook
 {
 private:
     // binary sorted tree for indexing bid and ask orders within order book
+    // PriceNode contains all quotes in size>time order using another BST for that price level
     map< int, PriceNodePtr >* m_bidTree; // < price, LimitPriceNode >
     map< int, PriceNodePtr >* m_askTree;
 

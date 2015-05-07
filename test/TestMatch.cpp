@@ -12,6 +12,22 @@
 #include "TestUtils.h"
 using namespace std;
 
+/**
+ * Test Plan:
+ * Add
+ * Same/different tree (covered in Match tests)
+ * Ordering priceTree orderTree (covered in match tests)
+ *
+ * Match
+ * No match
+ * Deplete a portion of quote
+ * Deplete one quote
+ * Deplete multiple quote. Post and no post
+ * Deplete one price level
+ * Deplete multiple price level
+ * Deplete entire tree
+ *
+ * */
 BOOST_AUTO_TEST_SUITE( Matching )
 
 BOOST_AUTO_TEST_CASE( TestNoMatch )
